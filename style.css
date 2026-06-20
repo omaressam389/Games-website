@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    background-color: #000000;
+}
+
+:root {
+    --primary-color: #CBFE1C;
+    --secondary-color: #ffffff;
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+/* body {
+    font-family: 'Days One', sans-serif;
+} */
+
+
+.navbar {
+    background-color: #0B0E13;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.bell-icon {
+    color: #ffffff;
+}
+
+.bell-icon:hover {
+    color: #CBFE1C;
+}
+
+.fa-gamepad {
+    color: #CBFE1C;
+}
+
+.nav-btn {
+    background-color: var(--primary-color) !important;
+}
+
+
+
+.maincolor {
+    color: #CBFE1C;
+}
+
+.maincolor:hover {
+    color: #CBFE1C
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+
+
+/* header */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(imgs/hero-bg.jpg);
+    /* background-image: url(imgs/hero-bg.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+
+header .inner h2 {
+    color: white;
+}
+
+header .inner h2 span {
+    color: var(--primary-color);
+}
+
+header .inner h2,
+header .inner h2 span {
+    font-size: 68px;
+
+}
+
+header .inner .header-buttons .btn-main {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: bolder;
+}
+
+header .inner .header-buttons .btn-main:hover {
+    background-color: #9fc916;
+}
+
+
+.scnd-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: bold;
+}
+
+.scnd-btn:hover {
+    background-color: var(--primary-color);
+    color: black;
+
+}
+
+.img-frame {
+    width: 90%;
+    background-color: #CBFE1C;
+    border-radius: 16px;
+}
+
+.img-frame img {
+    width: 100%;
+    height: 60%;
+    border: solid 6px transparent;
+    background-image: linear-gradient(#CBFE1C, rgb(2, 243, 2));
+    border-radius: 16px;
+}
+
+.sticker {
+    width: fit-content;
+    background-color: #0B0E13;
+    border: solid 1px whitesmoke;
+    border-radius: 8px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+
+}
+
+.sticker h5 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sticker h3 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sticker i {
+    color: #CBFE1C;
+}
+
+/* 2ND SECTION */
+/* 2ND SECTION */
+
+
+
+
+.title-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    text-transform: uppercase;
+    color: #CBFE1C;
+    font-size: 18px;
+}
+
+.title h2 span {
+    color: #CBFE1C;
+}
+
+.title h2 {
+    font-size: 60px;
+    font-family: ;
+}
+
+.title-lines::before,
+.title-lines::after {
+    content: "";
+    flex: 1;
+    max-width: 80px;
+    height: 3px;
+}
+
+.title-lines::before {
+    background-image: linear-gradient(to left, #CBFE1C, #000000);
+}
+
+.title-lines::after {
+    background-image: linear-gradient(to right, #CBFE1C, #000000);
+}
+
+
+
+.badges {
+    top: -300px;
+
+}
+
+.badge {
+    background-color: #CBFE1C;
+
+}
+
+.carousel-item .card1 .hovering-cover:hover {
+    border: solid 2px var(--primary-color);
+    background-image: linear-gradient(to top, #CBFE1C 0%, rgba(203, 254, 28, 0.4) 40%, transparent 100%);
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+.hovering-cover h4 {
+    bottom: -100px;
+}
+
+
+.hovering-cover:hover {
+    .badges {
+        top: 10;
+        transition-duration: 0.4s;
+    }
+
+    h4 {
+        bottom: 0px;
+        transition-duration: 0.4s;
+    }
+
+}
+
+.card1:hover {
+    .img-container {
+        overflow: hidden;
+    }
+}
+
+.card1 .img-container {
+    overflow: hidden;
+}
+
+.carousel-item.active {
+    display: flex !important;
+
+}
+
+
+.card1 .hovering-cover:hover {
+    background-image: linear-gradient(to bottom 30% #CBFE1C, transparent);
+}
+
+.card1 {
+    width: 32%;
+    transition: transform 0.3s ease;
+}
+
+
+.card1 .img-container img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    /* border-radius: 16px; */
+    display: block;
+}
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    transform: translateY(300px);
+    left: 570px;
+    border-radius: 50% !important;
+    border: solid 2px gainsboro;
+}
+
+.carousel-control-next {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    transform: translateY(300px);
+    left: 640px;
+    border: solid 2px gainsboro;
+    border-radius: 50% !important;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    color: #CBFE1C;
+    border-color: #CBFE1C;
+}
+
+
+.ourgames-section {
+
+    margin-bottom: 50px;
+    height: 100vh;
+}
+
+.button {
+    text-align: center;
+    background-color: transparent;
+    width: 200px;
+    padding: 16px;
+    padding-bottom: 2px;
+    position: absolute;
+    left: 740px;
+    bottom: 165px;
+    border: solid 3px var(--primary-color);
+}
+
+.button p {
+    font-weight: bold;
+    color: #CBFE1C;
+}
+
+.button:hover {
+    background-color: #CBFE1C;
+
+    p {
+        color: black;
+    }
+
+    transition-duration: 0.2s;
+}
+
+
+
+
+
+
+
+
+/* what we section */
+
+.what-we-section {
+    margin-top: -50px;
+}
+
+.what-we-section h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.card-description h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.the-card1 .inner {
+    background-color: #1A1A1A;
+    padding: 50px;
+    border: solid 1px #1E2939;
+    height: 100%;
+}
+
+.icon-box {
+    background-color: #1E2939;
+    color: #CBFE1C;
+
+}
+
+
+.end-line {
+    height: 4px;
+    width: 70%;
+    border-radius: 12px;
+    background-image: linear-gradient(#000000 0%, #CBFE1C 50%, #000000 100%);
+    box-shadow: 0 0 10px #CBFE1C;
+}
+
+
+
+/* top: 5px;
+left: 10px; */
+
+
+
+/* bottom: 5px;
+right: 10px; */
+
+.arrow {
+    transform: rotate(-50deg);
+    color: #CBFE1C;
+    top: -25px;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.arrow1 {
+    transform: rotate(135deg);
+    color: #CBFE1C;
+    bottom: -25px;
+    right: -20px;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.the-card1 .inner:hover .arrow {
+    opacity: 1;
+    top: 5px;
+    left: 10px;
+}
+
+.the-card1 .inner:hover .arrow1 {
+    opacity: 1;
+    bottom: 5px;
+    right: 10px;
+}
+
+.the-card1 .inner:hover {
+    border-color: #CBFE1C;
+
+    .icon-box {
+        color: #1E2939;
+        background-color: #CBFE1C;
+    }
+
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+/* wide moving cards */
+
+
+.horizontal-pics img {
+    height: 100px;
+    width: 100px;
+
+
+}
+
+.row-left {
+    animation: scrollLeft 20s linear infinite;
+}
+
+
+.row-right {
+    animation: scrollRight 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+
+    }
+
+
+}
+
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+}
+
+.moving-pics {
+    position: relative;
+}
+
+.circle {
+    width: 70%;
+    height: 50%;
+    border-radius: 99999px;
+    background-color: #CBFE1C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+}
+
+
+/* .triangle-border {
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-bottom: 30px solid #CBFE1C;
+    transform: rotate(60deg);
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* team members */
+
+
+
+.member1 .inner img {
+    border-radius: 24px;
+}
+
+.member1 {
+    width: fit-content;
+    background-color: #CBFE1C;
+}
+
+.title h5 {
+    color: grey;
+}
+
+.member h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+
+.member h5 {
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+}
+
+.member .inner:hover {
+    h5 {
+        color: #CBFE1C;
+    }
+
+    p {
+        color: #CBFE1C;
+    }
+}
+
+.member h6 {
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+.member .horizontal {
+    transform: rotate(90deg);
+    top: 35%;
+    left: 75%;
+    color: white;
+}
+
+.img-cover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-cover img {
+    display: block;
+    width: 100%;
+}
+
+.img-cover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(100%);
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0);
+
+}
+
+.inner:hover .img-cover::after {
+    transform: translateY(-100%);
+}
+
+
+
+/* contact us */
+/* contact us */
+
+.contact-us {
+    background-color: #0E141F;
+}
+
+.left-side,
+.right-side {
+    width: calc((100% - 50px) / 2);
+    /* background-color: #1E2939; */
+    /* border: solid 1px; */
+    /* padding: 40px; */
+    border-radius: 16px;
+}
+
+.first-card {
+    background-color: #1E2939;
+}
+
+.icon-place {
+    background-color: #CBFE1C;
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #C7FD24, #23E071);
+}
+
+.media .fa-youtube {
+    border-radius: 50%;
+}
+
+.gradient i {
+    color: #CBFE1C;
+}
+
+.right-side {
+    background-color: #1E2939;
+}
+
+.right-side .send {
+    background-color: #CBFE1C;
+}
+
+.form-check-label {
+    color: #7E8796;
+}
+
+.form-label {
+    color: #7E8796;
+}
+
+.box {
+    color: #364153;
+}
+
+.right-side .custom-color {
+    background-color: #364153;
+}
+
+.custom-color {
+    color: #89909A;
+}
+
+.one h3 {
+    color: #CBFE1C;
+}
+
+.one h6 {
+    color: #7E8796;
+}
+
+
+/* footer */
+
+
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.footer-brand {
+    color: #CBFE1C;
+}
+
+.footer-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+.social-icons a {
+    color: #a3b1cc;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #CBFE1C;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #a3b1cc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color:#C7FD24;
+}
+
+.copyright,
+.legal-links a {
+    font-size: 14px;
+}
+
+.legal-links a:hover {
+    color: #ffffff !important;
+}
+
+hr.border-secondary {
+    opacity: 0.15;
+}
+
+
+
+
+
+
+
